@@ -1,0 +1,23 @@
+<ons-page id="listPage">
+
+  <ons-toolbar>
+    <div class="center">メモ一覧</div>
+    <div class="right">
+      <ons-if platform="ios other">
+        <ons-toolbar-button onclick="onNewButtonClick()">
+          <ons-icon icon="plus"></ons-icon>
+        </ons-toolbar-button>
+      </ons-if>
+    </div>        
+  </ons-toolbar>
+  
+  <ons-if platform="android">
+    <ons-fab position="bottom right" onclick="onNewButtonClick()">
+      <ons-icon icon="md-plus"></ons-icon>
+    </ons-fab>
+  </ons-if>
+  
+  <ons-list id="memoList">
+  </ons-list>
+  
+</ons-page>
